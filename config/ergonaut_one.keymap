@@ -38,6 +38,11 @@
             bindings = <&tog 5>;
             key-positions = <18 19 20>;
         };
+
+        clear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <28 15 13 2>;
+        };
     };
 
     keymap {
