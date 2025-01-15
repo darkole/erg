@@ -61,9 +61,9 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&mt LGUI GRAVE        &kp Q    &kp W    &kp E             &kp R               &kp T             &kp Y              &kp U            &kp I          &kp O    &kp P     &mt LEFT_BRACKET RIGHT_BRACKET
-&lt 2 TAB             &kp A    &kp S    &kp D             &kp F               &kp G             &kp H              &kp J            &kp K          &kp L    &kp SEMI  &mt RCTRL SQT
-&mt LEFT_SHIFT MINUS  &lt 1 Z  &lt 2 X  &kp C             &kp V               &kp B             &kp N              &kp M            &kp COMMA      &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BSLH
+&mt ESCAPE GRAVE      &kp Q    &kp W    &kp E             &kp R               &kp T             &kp Y              &kp U            &kp I          &kp O    &kp P     &kp BACKSPACE
+&lt 2 TAB             &kp A    &kp S    &kp D             &kp F               &kp G             &kp H              &kp J            &kp K          &kp L    &kp SEMI  &mt RIGHT_BRACKET LEFT_BRACKET
+&mt LEFT_SHIFT MINUS  &lt 1 Z  &lt 2 X  &kp C             &kp V               &kp B             &kp N              &kp M            &kp COMMA      &kp DOT  &kp FSLH  &kp ENTER
                                         &mt LCTRL DELETE  &mt LEFT_GUI SPACE  &mt LEFT_ALT RET  &lt LWR BACKSPACE  &mt RSHFT SPACE  &lt RSE ENTER
             >;
         };
@@ -112,7 +112,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp N8        &kp N9        &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans        &trans        &trans
+                        &trans  &trans  &trans  &kp N0        &trans        &trans
             >;
         };
     };
