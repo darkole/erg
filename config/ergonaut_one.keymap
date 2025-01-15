@@ -41,7 +41,7 @@
 
         clear {
             bindings = <&bt BT_CLR>;
-            key-positions = <28 15 13 2>;
+            key-positions = <13 12 14 15 16 17>;
         };
 
         bootloader {
