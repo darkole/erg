@@ -72,7 +72,7 @@
             display-name = "MAIN";
             bindings = <
 &mt ESCAPE GRAVE      &kp Q    &kp W    &kp E             &kp R               &kp T             &kp Y              &kp U            &kp I          &kp O    &mt PRINTSCREEN P  &kp BACKSPACE
-&lt 2 TAB             &kp A    &kp S    &kp D             &lt 4 F             &lt 5 G           &lt 6 H            &lt 7 J          &kp K          &kp L    &kp SEMI           &mt RIGHT_BRACKET SQT
+&lt 2 TAB             &kp A    &kp S    &lt 8 D           &lt 4 F             &lt 5 G           &lt 6 H            &lt 7 J          &kp K          &kp L    &kp SEMI           &mt RIGHT_BRACKET SQT
 &mt LEFT_SHIFT MINUS  &lt 1 Z  &lt 2 X  &mt LC(LS(C)) C   &mt LC(LS(V)) V     &kp B             &kp N              &kp M            &kp COMMA      &kp DOT  &kp FSLH           &kp ENTER
                                         &mt LCTRL DELETE  &mt LEFT_GUI SPACE  &mt LEFT_ALT RET  &lt LWR BACKSPACE  &mt RSHFT SPACE  &lt RSE ENTER
             >;
@@ -91,10 +91,10 @@
         raise_layer {
             display-name = "NUM";
             bindings = <
-&mt LG(LS(N0)) LG(KP_NUM)  &mt LG(LS(NUMBER_1)) LG(NUMBER_1)  &mt LG(LS(NUMBER_2)) LG(NUMBER_2)  &mt LG(LS(NUMBER_3)) LG(NUMBER_3)  &mt LG(LS(NUMBER_4)) LG(NUMBER_4)  &mt LG(LS(N5)) LG(N5)  &mt LG(LS(NUMBER_6)) LG(NUMBER_6)  &mt LS(LG(N7)) LG(N7)  &mt LG(LS(N8)) LG(N8)  &mt LS(LG(N9)) LG(N9)  &mt LG(LS(MINUS)) LG(MINUS)  &mt LG(LS(EQUAL)) LG(EQUAL)
-&trans                     &kp KP_MULTIPLY                    &kp KP_N4                          &kp KP_N5                          &kp KP_N6                          &kp KP_PLUS            &kp C_MUTE                         &kp LEFT               &kp UP                 &kp RIGHT              &kp INS                      &trans
-&trans                     &trans                             &trans                             &kp KP_N2                          &kp KP_N3                          &kp KP_DOT             &kp C_VOL_DN                       &kp END                &kp DOWN               &kp PG_DN              &kp PAUSE_BREAK              &trans
-                                                                                                 &trans                             &trans                             &trans                 &trans                             &trans                 &trans
+&mt LG(LS(N0)) LG(KP_NUM)  &mt LG(LS(NUMBER_1)) LG(NUMBER_1)      &mt LG(LS(NUMBER_2)) LG(NUMBER_2)      &mt LG(LS(NUMBER_3)) LG(NUMBER_3)      &mt LG(LS(NUMBER_4)) LG(NUMBER_4)      &mt LG(LS(N5)) LG(N5)          &mt LG(LS(NUMBER_6)) LG(NUMBER_6)      &mt LS(LG(N7)) LG(N7)      &mt LG(LS(N8)) LG(N8)      &mt LS(LG(N9)) LG(N9)      &mt LG(LS(MINUS)) LG(MINUS)      &mt LG(LS(EQUAL)) LG(EQUAL)
+&mt LG(LC(N0)) LG(LA(N0))  &mt LC(LG(NUMBER_1)) LG(LA(NUMBER_1))  &mt LC(LG(NUMBER_2)) LA(LG(NUMBER_2))  &mt LC(LG(NUMBER_3)) LA(LG(NUMBER_3))  &mt LC(LG(NUMBER_4)) LA(LG(NUMBER_4))  &mt LC(LG(N5)) LC(LG(LA(N5)))  &mt LC(LG(NUMBER_6)) LA(LG(NUMBER_6))  &mt LG(LC(N7)) LG(LA(N7))  &mt LG(LC(N8)) LA(LG(N8))  &mt LC(LG(N9)) LA(LG(N9))  &mt LC(LG(MINUS)) LA(LG(MINUS))  &mt LC(LG(EQUAL)) LA(LG(EQUAL))
+&trans                     &trans                                 &trans                                 &kp KP_N2                              &kp KP_N3                              &kp KP_DOT                     &kp C_VOL_DN                           &kp END                    &kp DOWN                   &kp PG_DN                  &kp PAUSE_BREAK                  &trans
+                                                                                                         &trans                                 &trans                                 &trans                         &trans                                 &trans                     &trans
             >;
         };
 
@@ -122,7 +122,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp N8               &kp N9        &kp SLASH  &kp ASTERISK      &mt EQUAL MINUS
 &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5               &kp NUMBER_6  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans  &trans  &trans  &trans  &trans  &trans  &kp N1        &mt PERIOD NUMBER_2  &kp NUMBER_3  &kp ENTER  &kp LESS_THAN     &kp GREATER_THAN
-                        &trans  &trans  &trans  &kp N0        &trans               &trans
+                        &trans  &trans  &trans  &trans        &kp N0               &trans
             >;
         };
 
@@ -145,6 +145,15 @@
         };
 
         layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_9 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
