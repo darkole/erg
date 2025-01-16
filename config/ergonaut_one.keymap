@@ -53,6 +53,16 @@
             bindings = <&bootloader>;
             key-positions = <11 23 35 39>;
         };
+
+        ctrlins {
+            bindings = <&kp LC(INS)>;
+            key-positions = <26 14>;
+        };
+
+        shiftins {
+            bindings = <&kp LS(INS)>;
+            key-positions = <27 15>;
+        };
     };
 
     keymap {
@@ -72,7 +82,7 @@
             display-name = "SYM";
             bindings = <
 &mt LGUI F1  &kp F2        &kp F3        &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&trans       &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp INS
+&trans       &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp EQUAL
 &trans       &kp NUMBER_1  &kp NUMBER_2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp NON_US_BACKSLASH
                                          &trans    &trans    &trans     &trans     &trans    &trans
             >;
@@ -81,10 +91,10 @@
         raise_layer {
             display-name = "NUM";
             bindings = <
-&mt LGUI KP_NUM  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)   &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&trans           &kp KP_MULTIPLY   &kp KP_N4         &kp KP_N5         &kp KP_N6         &kp KP_PLUS  &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &trans
-&trans           &trans            &trans            &kp KP_N2         &kp KP_N3         &kp KP_DOT   &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                                     &trans            &trans            &trans       &trans        &trans    &trans
+&mt LG(LS(N0)) LG(KP_NUM)  &mt LG(LS(NUMBER_1)) LG(NUMBER_1)  &mt LG(LS(NUMBER_2)) LG(NUMBER_2)  &mt LG(LS(NUMBER_3)) LG(NUMBER_3)  &mt LG(LS(NUMBER_4)) LG(NUMBER_4)  &mt LG(LS(N5)) LG(N5)  &mt LG(LS(NUMBER_6)) LG(NUMBER_6)  &mt LS(LG(N7)) LG(N7)  &mt LG(LS(N8)) LG(N8)  &mt LS(LG(N9)) LG(N9)  &mt LG(LS(MINUS)) LG(MINUS)  &mt LG(LS(EQUAL)) LG(EQUAL)
+&trans                     &kp KP_MULTIPLY                    &kp KP_N4                          &kp KP_N5                          &kp KP_N6                          &kp KP_PLUS            &kp C_MUTE                         &kp LEFT               &kp UP                 &kp RIGHT              &kp INS                      &trans
+&trans                     &trans                             &trans                             &kp KP_N2                          &kp KP_N3                          &kp KP_DOT             &kp C_VOL_DN                       &kp END                &kp DOWN               &kp PG_DN              &kp PAUSE_BREAK              &trans
+                                                                                                 &trans                             &trans                             &trans                 &trans                             &trans                 &trans
             >;
         };
 
