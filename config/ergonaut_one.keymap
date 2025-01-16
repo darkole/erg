@@ -61,9 +61,9 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-&mt ESCAPE GRAVE      &kp Q    &kp W    &kp E             &kp R               &kp T             &kp Y              &kp U            &kp I          &kp O    &kp P     &kp BACKSPACE
-&lt 2 TAB             &kp A    &kp S    &kp D             &lt 4 F             &lt 5 G           &kp H              &kp J            &kp K          &kp L    &kp SEMI  &mt RIGHT_BRACKET LEFT_BRACKET
-&mt LEFT_SHIFT MINUS  &lt 1 Z  &lt 2 X  &kp C             &kp V               &kp B             &kp N              &kp M            &kp COMMA      &kp DOT  &kp FSLH  &kp ENTER
+&mt ESCAPE GRAVE      &kp Q    &kp W    &kp E             &kp R               &kp T             &kp Y              &kp U            &kp I          &kp O    &mt PRINTSCREEN P  &kp BACKSPACE
+&lt 2 TAB             &kp A    &kp S    &kp D             &lt 4 F             &lt 5 G           &lt 6 H            &lt 7 J          &kp K          &kp L    &kp SEMI           &mt RIGHT_BRACKET SQT
+&mt LEFT_SHIFT MINUS  &lt 1 Z  &lt 2 X  &mt LC(LS(C)) C   &mt LC(LS(V)) V     &kp B             &kp N              &kp M            &kp COMMA      &kp DOT  &kp FSLH           &kp ENTER
                                         &mt LCTRL DELETE  &mt LEFT_GUI SPACE  &mt LEFT_ALT RET  &lt LWR BACKSPACE  &mt RSHFT SPACE  &lt RSE ENTER
             >;
         };
@@ -72,7 +72,7 @@
             display-name = "SYM";
             bindings = <
 &mt LGUI F1  &kp F2        &kp F3        &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&trans       &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &trans
+&trans       &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp INS
 &trans       &kp NUMBER_1  &kp NUMBER_2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp NON_US_BACKSLASH
                                          &trans    &trans    &trans     &trans     &trans    &trans
             >;
@@ -109,10 +109,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp N8        &kp N9        &kp SLASH  &kp ASTERISK      &mt MINUS MINUS
-&trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &kp LESS_THAN     &kp GREATER_THAN
-                        &trans  &trans  &trans  &kp N0        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp N8               &kp N9        &kp SLASH  &kp ASTERISK      &mt EQUAL MINUS
+&trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_4  &kp N5               &kp NUMBER_6  &kp PLUS   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &trans  &trans  &trans  &trans  &trans  &kp N1        &mt PERIOD NUMBER_2  &kp NUMBER_3  &kp ENTER  &kp LESS_THAN     &kp GREATER_THAN
+                        &trans  &trans  &trans  &kp N0        &trans               &trans
             >;
         };
 
